@@ -11,3 +11,8 @@ added automatic main legend resetter
 1.4.0-beta
 ====================
 added "random" option to config
+
+1.4.1-beta
+====================
+fixed a bug where the app would not work correctly if not focused.
+Introduced new bug: log messages are not shown to the user anymore (black screen)

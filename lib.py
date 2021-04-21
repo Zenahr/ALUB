@@ -103,7 +103,7 @@ def reset_CURRENT_MAIN_INDEX():
 
 def click_main_legends():
     global CURRENT_MAIN_LEGEND_INDEX
-    Timer(30.0, reset_CURRENT_MAIN_INDEX).start() #reset selection to 1st main legend after launching into map
+    timer = Timer(30.0, reset_CURRENT_MAIN_INDEX).start() #reset selection to 1st main legend after launching into map
     MAIN_LEGENDS = [
     get_index_by_legend_name(json.load(open('./config.json'))['1st_main_legend']),
     get_index_by_legend_name(json.load(open('./config.json'))['2nd_main_legend']),
