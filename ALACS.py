@@ -1,4 +1,6 @@
+import pynput
 from pynput import keyboard
+import lib
 from lib import click_random_legend
 import json
 
