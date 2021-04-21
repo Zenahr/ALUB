@@ -1,6 +1,7 @@
 {
-    "key":"home",
-    "1st_main_legend":"HORIZON",
-    "2nd_main_legend":"OCTANE",
-    "3rd_main_legend":"BLOODHOUND"
+    "key"                 : "home",
+    "select_random_legend": false,
+    "1st_main_legend"     : "HORIZON",
+    "2nd_main_legend"     : "OCTANE",
+    "3rd_main_legend"     : "BLOODHOUND"
 }
