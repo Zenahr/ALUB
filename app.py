@@ -4,10 +4,6 @@ import pyautogui
 import time
 from legends import legends
 
-# width, height = autopy.screen.size()
-# height /= 2
-# height -= 10  # Stay in the screen bounds.
-
 def get_legend_name_by_index(index):
     if   index == 0:
         return 'BLOODHOUND'
@@ -53,5 +49,3 @@ def click_random_legend():
     print('selected legend:', get_legend_name_by_index(random_index))
     time.sleep(.2)
     autopy.mouse.click()
-
-# pyautogui.size()
