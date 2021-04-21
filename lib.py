@@ -3,6 +3,8 @@ import autopy
 import pyautogui
 import time
 import json
+from threading import Timer
+
 
 CURRENT_MAIN_LEGEND_INDEX = 0
 
@@ -94,15 +96,22 @@ def get_index_by_legend_name(name):
     elif name == 'FUSE':
         return 15
 
-def click_main_legends():
-    print('SELECTING ONE OF THE MAIN LEGENDS')
+def reset_CURRENT_MAIN_INDEX():
+    print('resetting MAIN LEGEND INDEX')
     global CURRENT_MAIN_LEGEND_INDEX
+    CURRENT_MAIN_LEGEND_INDEX = 0
+    print(CURRENT_MAIN_LEGEND_INDEX)
 
+def click_main_legends():
+    global CURRENT_MAIN_LEGEND_INDEX
+    Timer(30.0, reset_CURRENT_MAIN_INDEX).start() #reset selection to 1st main legend after launching into map
     MAIN_LEGENDS = [
     get_index_by_legend_name(json.load(open('./config.json'))['1st_main_legend']),
     get_index_by_legend_name(json.load(open('./config.json'))['2nd_main_legend']),
     get_index_by_legend_name(json.load(open('./config.json'))['3rd_main_legend']),
     ]
+
+    print('SELECTING MAIN LEGEND', get_legend_name_by_index(MAIN_LEGENDS[CURRENT_MAIN_LEGEND_INDEX]))
 
     try:
         autopy.mouse.move(*legends[MAIN_LEGENDS[CURRENT_MAIN_LEGEND_INDEX]])
@@ -116,7 +125,6 @@ def click_main_legends():
         CURRENT_MAIN_LEGEND_INDEX = 0
     else:
         CURRENT_MAIN_LEGEND_INDEX += 1
-
 
 def get_position():
     print(
