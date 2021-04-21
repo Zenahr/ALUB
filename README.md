@@ -3,6 +3,10 @@
 Someone wrote in some random chat that he'd/she'd like to have a random character selection option. This small program solves the problem.
 I made this purely for the fun. This has been tested on a 1920:1080 monitor. Other resolutions might not be supported.
 
+## DEMO
+
+<bold>[click here](https://youtu.be/YPHCRx9RR8U) to see it in action</bold>
+
 ## HOW IT WORKS
 
 1. Get the latest release from [here](https://github.com/Zenahr/ALACS/releases/latest)
