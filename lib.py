@@ -100,7 +100,6 @@ def reset_CURRENT_MAIN_INDEX():
     print('resetting MAIN LEGEND INDEX')
     global CURRENT_MAIN_LEGEND_INDEX
     CURRENT_MAIN_LEGEND_INDEX = 0
-    print(CURRENT_MAIN_LEGEND_INDEX)
 
 def click_main_legends():
     global CURRENT_MAIN_LEGEND_INDEX
