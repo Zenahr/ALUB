@@ -32,7 +32,7 @@ DISCLAIMER: don't hate on me for having to play Fuse now kekw
 
 ## KNOWN ISSUES
 
-Selection does not work if application window is not focused.
+window does not output any info for the user (silent mode). This is being worked on at the moment.
 
 ## FAQ
 
