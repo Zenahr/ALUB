@@ -2,7 +2,26 @@ import random
 import autopy
 import pyautogui
 import time
-from legends import legends
+
+# 1920::1080
+legends = [
+(1141, 366), # BLOODHOUND
+(1277, 360), # GIBRALTAR
+(1390, 363), # LIFELINE
+(1496, 359), # PATHFINDER
+(1630, 358), # WRAITH
+(1109, 483), # BANGALORE
+(1231, 475), # CAUSTIC
+(1353, 484), # MIRAGE
+(1464, 482), # OCTANE
+(1588, 492), # WATTSON
+(1702, 492), # CRYPTO
+(1183, 612), # REVENANT
+(1306, 613), # LOBA
+(1424, 611), # RAMPART
+(1549, 611), # HORIZON
+(1670, 612)  # FUSE
+]
 
 def get_legend_name_by_index(index):
     if   index == 0:

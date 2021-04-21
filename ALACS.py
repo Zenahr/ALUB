@@ -1,5 +1,5 @@
 from pynput import keyboard
-from app import click_random_legend
+from lib import click_random_legend
 import json
 
 ACTIVATION_BUTTON = json.load(open('./config.json'))['key']
@@ -11,14 +11,12 @@ def on_press(key):
 def on_release(key):
     pass
 
-# Collect events until released
+print('BOOTING UP ALACS ...')
+print('BOOTED UP ALACS')
+print('LISTENING FOR ACTIVATION KEY ...')
+print('MAKE SURE TO CLOSE THIS WINDOW AFTER CLOSING APEX')
+print('TO CHANGE THE ACTIVATION KEY READ THE INSTRUCTIONS FOUND IN config.json')
 with keyboard.Listener(
         on_press=on_press,
         on_release=on_release) as listener:
     listener.join()
-
-# ...or, in a non-blocking fashion:
-listener = keyboard.Listener(
-    on_press=on_press,
-    on_release=on_release)
-listener.start()
