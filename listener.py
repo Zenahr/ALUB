@@ -1,26 +1,15 @@
 from pynput import keyboard
-import pyautogui
 from app import click_random_legend
+import json
+
+ACTIVATION_BUTTON = json.load(open('./config.json'))['key']
 
 def on_press(key):
-    try:
-        # print('alphanumeric key {0} pressed'.format(
-            # key.char))
-            if key == keyboard.Key.home:
-                print('selecting random legend')
+            if key == keyboard.Key[ACTIVATION_BUTTON]:
                 click_random_legend()
-    except AttributeError:
-        # print('special key {0} pressed'.format(
-        #     key))
-        pass
 
 def on_release(key):
-    # print('{0} released'.format(
-    #     key))
-    if key == keyboard.Key.esc:
-        # Stop listener
-        return True
-        # return False
+    pass
 
 # Collect events until released
 with keyboard.Listener(

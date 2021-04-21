@@ -1,0 +1,60 @@
+CHANGE SCRIPT ACTIVATION BUTTON:
+==================================================
+
+swap out the key like so:
+
+ORIGINAL:
+========================
+
+{
+    "key":"home"
+}
+
+NEW:
+========================
+
+{
+    "key":"YOUR_NEW_KEY"
+}
+
+In other words: leave everything as is and ONLY replace the key text, which in our example is >>> home <<<.
+
+POSSIBLE KEYS:
+==================================================
+
+(GENERAL KEYS):
+alt
+backspace
+caps_lock
+ctrl
+delete
+end
+enter 
+esc
+home
+insert
+media_next
+media_play_pause
+media_previous
+media_volume_down
+media_volume_mute
+media_volume_up
+num_lock
+page_down
+page_up
+pause
+print_screen
+shift
+space
+tab
+
+(FUNCTION KEYS):
+f1
+...
+f20
+
+(ARROW KEYS):
+up
+down
+left
+right
