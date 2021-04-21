@@ -1,0 +1,13 @@
+1.2.0-beta
+====================
+added main legend selection option
+
+
+1.3.0-beta
+====================
+added automatic main legend resetter
+
+
+1.4.0-beta
+====================
+added "random" option to config
