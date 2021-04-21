@@ -30,6 +30,10 @@ I made this purely for the fun. This has been tested on a 1920:1080 monitor. Oth
 
 DISCLAIMER: don't hate on me for having to play Fuse now kekw
 
+## KNOWN ISSUES
+
+Selection does not work if application window is not focused.
+
 ## FAQ
 
 #### I don't care which legend I get, does this app support that?
