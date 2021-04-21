@@ -102,6 +102,7 @@ def reset_CURRENT_MAIN_INDEX():
     CURRENT_MAIN_LEGEND_INDEX = 0
 
 def click_main_legends():
+    pyautogui.press('escape') # Escape current selection
     global CURRENT_MAIN_LEGEND_INDEX
     timer = Timer(30.0, reset_CURRENT_MAIN_INDEX).start() #reset selection to 1st main legend after launching into map
     MAIN_LEGENDS = [
@@ -135,6 +136,7 @@ def click_specified_legend(index):
     autopy.mouse.move(*legends[random_index])
 
 def click_random_legend():
+    pyautogui.press('escape') # Escape current selection
     print('SELECTING RANDOM LEGEND')
     random_index = random.randint(0, len(legends)-1)
     autopy.mouse.move(*legends[random_index])
