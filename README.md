@@ -1,5 +1,10 @@
 # ALACS - Apex Legends Automatic Character Selector
 
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Zenahr/ALACS)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Zenahr/ALACS/graphs/commit-activity)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://github.com/Zenahr/ALACS/stargazers/)
+
 Someone wrote in some random chat that he'd/she'd like to have a random character selection option. This small program solves the problem.
 I made this purely for the fun. This has been tested on a 1920:1080 monitor. Other resolutions might not be supported.
 
@@ -30,9 +35,3 @@ just activate ALACS a second/third time by pressing the `Activation Button`
 ## Which Resolutions Has ALACS Been Tested On?
 
 - Full HD (1920:1080)
-
-
-[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Zenahr/ALACS)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Zenahr/ALACS/graphs/commit-activity)
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://github.com/Zenahr/ALACS/stargazers/)
