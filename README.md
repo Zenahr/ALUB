@@ -7,6 +7,8 @@ I made this purely for the fun. This has been tested on a 1920:1080 monitor. Oth
 
 <bold>[click here](https://youtu.be/YPHCRx9RR8U) to see it in action</bold>
 
+[![](THUMBNAIL.JPG)](https://youtu.be/YPHCRx9RR8U)
+
 ## HOW IT WORKS
 
 1. Get the latest release from [here](https://github.com/Zenahr/ALACS/releases/latest)
@@ -18,6 +20,17 @@ I made this purely for the fun. This has been tested on a 1920:1080 monitor. Oth
 7. voila! Your legend has been selected for you automatically
 
 DISCLAIMER: don't hate on me for having to play Fuse now kekw
+
+## FAQ
+
+#### What Do I Do If The Selected Character Is Taken/Locked?
+
+just activate ALACS a second/third time by pressing the `Activation Button`
+
+## Which Resolutions Has ALACS Been Tested On?
+
+- Full HD (1920:1080)
+
 
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Zenahr/ALACS)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Zenahr/ALACS/graphs/commit-activity)
