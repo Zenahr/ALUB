@@ -3,3 +3,6 @@ env
 __pycache__
 Capture.JPG
 temp.*
+dist
+build
+*.spec
