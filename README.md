@@ -22,7 +22,7 @@ I made this purely for the fun. This has been tested on a 1920:1080 monitor. Oth
 
 1. Get the latest release from [here](https://github.com/Zenahr/ALACS/releases/latest)
 2. Unzip it somewhere on your machine
-3. (Optional) change the activation key in `config.json` to your liking (`home` key is the default)
+3. (Optional) change the activation key and preferred legends in `config.json` to your liking (`home` key is the default)
 4. Start ALACS.exe
 5. Start Apex Legends as usual
 6. When in the selection screen, activate ALACS via the pre-defined activation key
@@ -31,6 +31,14 @@ I made this purely for the fun. This has been tested on a 1920:1080 monitor. Oth
 DISCLAIMER: don't hate on me for having to play Fuse now kekw
 
 ## FAQ
+
+#### I don't care which legend I get, does this app support that?
+
+Yes! Just make sure your `config.json` `select_random_legend` option is set to `true`. That's it!
+
+#### I do care about which legend I get, does this app support that?
+
+Yes! Just make sure your `config.json` `select_random_legend` option is set to `false` and fill out the `1st`, `2nd` and `3rd` legend names to your liking! Done.
 
 #### What Do I Do If The Selected Character Is Taken/Locked?
 
