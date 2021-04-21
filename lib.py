@@ -103,10 +103,15 @@ def click_main_legends():
     get_index_by_legend_name(json.load(open('./config.json'))['2nd_main_legend']),
     get_index_by_legend_name(json.load(open('./config.json'))['3rd_main_legend']),
     ]
-    autopy.mouse.move(*legends[MAIN_LEGENDS[CURRENT_MAIN_LEGEND_INDEX]])
-    time.sleep(.2)
-    autopy.mouse.click()
-    print(CURRENT_MAIN_LEGEND_INDEX)
+
+    try:
+        autopy.mouse.move(*legends[MAIN_LEGENDS[CURRENT_MAIN_LEGEND_INDEX]])
+        time.sleep(.2)
+        autopy.mouse.click()
+    except TypeError:
+        print('EITHER YOU SPELLED A LEGEND NAME WRONG OR LEFT A FIELD EMPTY. PLEASE CHECK config.json. SELECTING RANDOM LEGEND')
+        click_random_legend()
+        
     if CURRENT_MAIN_LEGEND_INDEX >= len(MAIN_LEGENDS)-1:
         CURRENT_MAIN_LEGEND_INDEX = 0
     else:
