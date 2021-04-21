@@ -2,6 +2,9 @@ import random
 import autopy
 import pyautogui
 import time
+import json
+
+CURRENT_MAIN_LEGEND_INDEX = 0
 
 # 1920::1080
 legends = [
@@ -91,12 +94,36 @@ def get_index_by_legend_name(name):
     elif name == 'FUSE':
         return 15
 
+def click_main_legends():
+    print('SELECTING ONE OF THE MAIN LEGENDS')
+    global CURRENT_MAIN_LEGEND_INDEX
+
+    MAIN_LEGENDS = [
+    get_index_by_legend_name(json.load(open('./config.json'))['1st_main_legend']),
+    get_index_by_legend_name(json.load(open('./config.json'))['2nd_main_legend']),
+    get_index_by_legend_name(json.load(open('./config.json'))['3rd_main_legend']),
+    ]
+    autopy.mouse.move(*legends[MAIN_LEGENDS[CURRENT_MAIN_LEGEND_INDEX]])
+    time.sleep(.2)
+    autopy.mouse.click()
+    print(CURRENT_MAIN_LEGEND_INDEX)
+    if CURRENT_MAIN_LEGEND_INDEX >= len(MAIN_LEGENDS)-1:
+        CURRENT_MAIN_LEGEND_INDEX = 0
+    else:
+        CURRENT_MAIN_LEGEND_INDEX += 1
+
+
 def get_position():
     print(
     pyautogui.position()
     )
 
+def click_specified_legend(index):
+    print('selected legend:', get_legend_name_by_index(index))
+    autopy.mouse.move(*legends[random_index])
+
 def click_random_legend():
+    print('SELECTING RANDOM LEGEND')
     random_index = random.randint(0, len(legends)-1)
     autopy.mouse.move(*legends[random_index])
     print('selected legend:', get_legend_name_by_index(random_index))

@@ -1,14 +1,17 @@
 import pynput
 from pynput import keyboard
 import lib
-from lib import click_random_legend
+from lib import click_random_legend, click_main_legends
 import json
 
 ACTIVATION_BUTTON = json.load(open('./config.json'))['key']
 
 def on_press(key):
             if key == keyboard.Key[ACTIVATION_BUTTON]:
-                click_random_legend()
+                if json.load(open('./config.json'))['1st_main_legend']:
+                    click_main_legends()
+                else:
+                    click_random_legend()
 
 def on_release(key):
     pass
