@@ -14,6 +14,10 @@ I made this purely for the fun. This has been tested on a 1920:1080 monitor. Oth
 
 [![](THUMBNAIL.JPG)](https://youtu.be/YPHCRx9RR8U)
 
+## GET IT NOW
+
+[Here's the direct download link to the latest release. No Installation necessary.](https://github.com/Zenahr/ALACS/releases/download/1.1.0-beta/ALACS.1.1.0-beta.zip)
+
 ## HOW IT WORKS
 
 1. Get the latest release from [here](https://github.com/Zenahr/ALACS/releases/latest)
