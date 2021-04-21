@@ -8,6 +8,12 @@
 Someone wrote in some random chat that he'd/she'd like to have a random character selection option. This small program solves the problem.
 I made this purely for the fun. This has been tested on a 1920:1080 monitor. Other resolutions might not be supported.
 
+## FEATURES
+
+- automatically select a random legend just by pressing just one button
+- automatically cycle through your 3 preferred legends by pressing just one button
+- automatically select your main legend without having to do anything! (*planned*)
+
 ## DEMO
 
 <bold>[click here](https://youtu.be/YPHCRx9RR8U) to see it in action</bold>
