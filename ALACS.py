@@ -15,9 +15,10 @@ def on_release(key):
 
 print('BOOTING UP ALACS ...')
 print('BOOTED UP ALACS')
-print('LISTENING FOR ACTIVATION KEY ...')
 print('MAKE SURE TO CLOSE THIS WINDOW AFTER CLOSING APEX')
-print('TO CHANGE THE ACTIVATION KEY READ THE INSTRUCTIONS FOUND IN config.json')
+print('TO CHANGE THE ACTIVATION KEY READ THE INSTRUCTIONS FOUND IN instructions.txt')
+print('ACTIVATION KEY IS SET TO:', '>>> ', ACTIVATION_BUTTON, ' <<<')
+print('LISTENING FOR ACTIVATION KEY ...')
 with keyboard.Listener(
         on_press=on_press,
         on_release=on_release) as listener:
