@@ -10,11 +10,7 @@ ACTIVATION_BUTTON = json.load(open('./config.json'))['key']
 def main():
     def on_press(key):
                 if key == keyboard.Key[ACTIVATION_BUTTON]:
-                    if not json.load(open('./config.json'))['select_random_legend']:
-                        click_readyup_button()
-                    else:
-                        click_random_legend()
-
+                    click_readyup_button()
     def on_release(key):
         pass
 

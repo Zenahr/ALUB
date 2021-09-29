@@ -1,0 +1,5 @@
+periodically: every second:
+
+1. take screenshot
+2. preprocess via cv2 for OCR
+3. check if text says "READY", if so, click button. Else, don't do anything.
