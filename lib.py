@@ -8,7 +8,7 @@ import cv2
 import pytesseract
 
 def click_readyup_button():
-    print('RUNNING AUTO-READY')
+    print('CHECKING...')
     if should_click():
         try:
             autopy.mouse.move(*(230, 928))
@@ -24,8 +24,8 @@ def get_position():
 
 def should_click():
     box = ((140, 950), (170, 42))
-    # screenshot = autopy.bitmap.capture_screen(box)
-    # screenshot.save('screenshot.png')
+    screenshot = autopy.bitmap.capture_screen(box)
+    screenshot.save('screenshot.png')
     img = cv2.imread('screenshot.png')
     threshold = 90
     gray      = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
