@@ -36,6 +36,8 @@ def main():
         if keyboard.is_pressed('b') == True:
             update_should_run()
 
+# https://stackoverflow.com/a/15730303/12675239
+# https://docs.python.org/2/library/threading.html#condition-objects
 
 if __name__ == '__main__':
     elevate(main)
