@@ -16,3 +16,7 @@ added "random" option to config
 ====================
 fixed a bug where the app would not work correctly if not focused.
 Introduced new bug: log messages are not shown to the user anymore (black screen)
+
+1.4.2-beta
+====================
+fixed critical issue where user could not escape current selection automatically

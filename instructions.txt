@@ -1,38 +1,10 @@
-CHOOSE MODE (RANDOM vs. PREFERRED LEGENDS):
-==================================================
+1. Start Apex Legends
+2. Start ALUB
+3. Press activation button once to activate auto ready-up
 
-if you'd like the app to choose your preferred legends for you, make sure to put >>> false <<< into the "select_random_legend" field inside config.json
-Otherwise just change >>> false <<< to >>> true <<<. That way your main legends will be ignored and a random legend will be selected for you.
+Press activation button again to stop auto-readying.
 
-
-SET UP PREFERRED LEGENDS:
-==================================================
-
-as of v1.2.0-beta you can specify three legends you want the app to select for you everytime you hit the activation button.
-just switch out the legend names inside config.txt and you're good to go.
-
-As of now the following legends can be put in there:
-
-BLOODHOUND
-GIBRALTAR
-LIFELINE
-PATHFINDER
-WRAITH
-BANGALORE
-CAUSTIC
-MIRAGE
-OCTANE
-WATTSON
-CRYPTO
-REVENANT
-LOBA
-RAMPART
-HORIZON
-FUSE
-
-
-
-CHANGE KEYBIND:
+CHANGE ACTIVATION KEYBIND:
 ==================================================
 
 swap out the key like so:

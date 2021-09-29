@@ -1,7 +1,7 @@
 import pynput
 from pynput import keyboard
 import lib
-from lib import click_random_legend, click_main_legends
+from lib import click_random_legend, click_readyup_button
 import json
 from command_runner.elevate import elevate
 
@@ -11,7 +11,7 @@ def main():
     def on_press(key):
                 if key == keyboard.Key[ACTIVATION_BUTTON]:
                     if not json.load(open('./config.json'))['select_random_legend']:
-                        click_main_legends()
+                        click_readyup_button()
                     else:
                         click_random_legend()
 
